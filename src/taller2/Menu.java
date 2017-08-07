@@ -49,6 +49,11 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(btnAdivinar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
         btnMatriz.setText("Matriz");
+        btnMatriz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMatrizActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnMatriz, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 70, -1));
 
         pack();
@@ -59,6 +64,12 @@ public class Menu extends javax.swing.JFrame {
         ventana.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAdivinarActionPerformed
+
+    private void btnMatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMatrizActionPerformed
+        Matriz ventana = new Matriz();
+        ventana.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnMatrizActionPerformed
 
     /**
      * @param args the command line arguments

@@ -58,7 +58,7 @@ public class Matriz extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnMatriz, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
-        getContentPane().add(txtColumnas, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 30, -1));
+        getContentPane().add(txtColumnas, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 30, -1));
         getContentPane().add(txtFilas, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 30, -1));
 
         tblMatriz.setModel(new javax.swing.table.DefaultTableModel(
