@@ -93,8 +93,15 @@ public class Adivinar extends javax.swing.JFrame {
 
     private void btnRandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRandActionPerformed
         Random rand = new Random();
-        txtRand.setText(""+rand.nextInt((10)+1));
-        txtIntentos.setText(""+3);
+        int num = rand.nextInt(10)+1;
+        if(num==0){
+            btnRandActionPerformed(evt);
+        }
+        else{
+            txtRand.setText(""+num);
+            txtIntentos.setText(""+3);
+        }
+        
     }//GEN-LAST:event_btnRandActionPerformed
 
     private void btnAdivinarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdivinarActionPerformed
