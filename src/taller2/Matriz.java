@@ -94,7 +94,7 @@ public class Matriz extends javax.swing.JFrame {
         Random rand = new Random();
         for(int i = 0; i < filas; i++){
             for(int j = 0; j < columnas; j++){
-                matriz[i][j] = rand.nextInt(10)+1;
+                matriz[i][j] = rand.nextInt(20)+1;
             }
         }
         for (int i = 0; i < filas; i++) {
